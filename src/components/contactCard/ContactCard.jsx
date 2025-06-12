@@ -24,7 +24,7 @@ const ContactCard = ({
   callContent,
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 sm:p-8 flex flex-col justify-between h-full">
+    <div className="bg-white rounded-lg shadow-md p-6 sm:p-8 flex flex-col justify-between w-full sm:w-auto">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">
         {title} <span className="text-[#02AEC9]">{titleHighlight}</span>
       </h2>

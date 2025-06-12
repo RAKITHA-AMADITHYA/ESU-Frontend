@@ -1,16 +1,8 @@
 'use client'
-import React from 'react'
-import Image from 'next/image'
+import ContactCard from '@/components/contactCard/ContactCard'
 import SubHero from '@/components/heroSection/SubHero'
 import MessageForm from '@/components/messageForm/MessageForm'
-import ContactCard from '@/components/contactCard/ContactCard'
-import { 
-  Square, 
-  Linkedin, 
-  Camera, 
-  MessageSquare, 
-  PlusCircle 
-} from 'lucide-react'
+import Image from 'next/image'
 
 function page() {
      const handleMapClick = () => {
@@ -78,7 +70,7 @@ function page() {
 
             
                 {/* contact card section */}
-                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 mt-10' data-aos="fade-up">
+                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 mt-20' data-aos="fade-up">
                   {/* Certificate and Transcript */}
                   <ContactCard
                     title="Certificate and"
