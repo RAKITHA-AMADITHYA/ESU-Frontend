@@ -16,11 +16,11 @@ function page() {
             <SubHero/>
             <div className="relative w-full bg-white flex flex-col ">
                 
-            <div className="bg-[#aed6e0] mt-50 h-80"> {/* Corresponds to Box bgcolor="#E5F2FF" mt={2} */}
-                <div className="w-auto  mt-0 md:mt-2 mx-2 md:mx-auto"> {/* Corresponds to Box sx={{width:..., mt:..., margin:...}} */}
-                <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-2"> {/* Corresponds to Grid container spacing={2} sx={{mt: 2}} */}
+            <div className="bg-[#aed6e0] mt-50 h-80">
+                <div className="w-auto  mt-0 md:mt-2 mx-2 md:mx-auto">
+                <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-2">
 
-          {/* Left Grid */}
+                 {/* Left Grid */}
                     <div className="w-full md:w-7/12 flex justify-center md:justify-end items-end md:-mt-[180px]" data-aos="fade-up"> 
                               <Image
                       src="/esu/common/studentImg.png"
