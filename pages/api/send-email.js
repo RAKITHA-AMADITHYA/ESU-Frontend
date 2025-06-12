@@ -1,6 +1,9 @@
 import formidable from 'formidable';
 import nodemailer from 'nodemailer';
 import fs from 'fs';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const config = {
   api: {
@@ -11,8 +14,8 @@ export const config = {
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.GMAIL_USER || 'rakiamadithya20@gmail.com',
-    pass: process.env.GMAIL_APP_PASSWORD || 'sfhx jogv esop btes'
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD
   }
 });
 
@@ -54,8 +57,8 @@ async function handler(req, res) {
     }
 
     const mailOptions = {
-      from: process.env.GMAIL_USER || 'rakiamadithya20@gmail.com',
-      to: 'caninik287@2mik.com',
+      from: process.env.GMAIL_USER,
+      to: process.env.EMAIL_TO,
       subject: 'New Contact Form Submission',
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4;">
