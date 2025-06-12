@@ -22,94 +22,63 @@ function page() {
     return (
         <div className="min-h-screen bg-white">
             <SubHero/>
-            <div className="relative w-full bg-white flex flex-col">
+            <div className="relative w-full bg-white flex flex-col ">
                 
+            <div className="bg-[#aed6e0] mt-50 h-80"> {/* Corresponds to Box bgcolor="#E5F2FF" mt={2} */}
+                <div className="w-auto  mt-0 md:mt-2 mx-2 md:mx-auto"> {/* Corresponds to Box sx={{width:..., mt:..., margin:...}} */}
+                <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-2"> {/* Corresponds to Grid container spacing={2} sx={{mt: 2}} */}
 
-                {/* Main Content Area: Image and Contact Box */}
-                 <div className="relative w-full bg-white flex flex-col">
-      {/* Top Section: "BUILDS Your Career With Us" Text and Social Icons */}
-      <div className="w-full bg-white p-4 md:px-20 py-6 flex flex-col md:flex-row items-center justify-between z-10">
-        {/* Main Title */}
-        <div>
-            
-        <h1 className="text-5xl sm:text-5xl md:text-7xl lg:text-7xl font-extrabold text-[#02AEC9] ">
-          BUILDS
-        </h1>
-         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#02AEC9] leading-tight mb-4 md:mb-0">
-  <span className="text-[#383636] font-normal">
-    Your Career With <span className="font-extrabold text-[#383636]">Us</span>
-  </span>
-</h2>
+          {/* Left Grid */}
+                    <div className="w-full md:w-7/12 flex justify-center md:justify-end items-end md:-mt-[180px]" data-aos="fade-up"> 
+                              <Image
+                      src="/esu/common/studentImg.png"
+                      alt="Students happily walking on campus"
+                      width={900} // adjust size as needed
+                      height={400}
+                      priority
+                      className="object-contain object-center lg:object-left"
+                    />
 
-        </div>
-
-
-        {/* Social Media Icons (using Lucide generic icons) */}
-        <div className="flex items-center space-x-2">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-             className="p-3 text-gray-700 text-2xl hover:text-[#02AEC9] transition-colors duration-200">
-            <Square /> {/* Generic icon for Facebook */}
-          </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-             className="p-3 text-gray-700 text-2xl hover:text-[#02AEC9] transition-colors duration-200">
-            <Linkedin /> {/* Lucide's LinkedIn icon */}
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-             className="p-3 text-gray-700 text-2xl hover:text-[#02AEC9] transition-colors duration-200">
-            <Camera /> {/* Generic icon for Instagram */}
-          </a>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
-             className="p-3 text-gray-700 text-2xl hover:text-[#02AEC9] transition-colors duration-200">
-            <MessageSquare /> {/* Generic icon for X/Twitter */}
-          </a>
-          <a href="#" // You can replace this with a relevant link or remove if not needed
-             className="p-3 text-gray-700 text-2xl hover:text-[#02AEC9] transition-colors duration-200">
-            <PlusCircle /> {/* Generic icon for Google Plus */}
-          </a>
-        </div>
-      </div>
-
-      {/* Main Content Area: Image Section and Contact Information Box */}
-      {/* Uses a grid to control the layout for image and contact box */}
-      <div className="relative flex-grow grid grid-cols-1 lg:grid-cols-12 overflow-hidden">
-
-          {/* Image Section (left side, taking ~7 columns on large screens) */}
-          {/* The 'students.png' image is expected to include the blue bar as part of its content */}
-          <div className="relative col-span-full lg:col-span-7 h-[400px] md:h-[500px] lg:h-auto z-20">
-            <Image
-              src="/esu/common/students.png" // Path to your student image
-              alt="Students happily walking on campus"
-              fill // Makes the image fill its parent container
-              priority // Prioritizes loading this image for better LCP
-              className="object-cover object-center" // Scales and crops to cover the area, centered
-              sizes="(max-width: 1024px) 100vw, 70vw" // Helps Next.js optimize image sizes
-            />
           </div>
 
-          {/* Right Section: Head Office Contact Information */}
-          <div className="col-span-full lg:col-span-5 bg-[#02AEC9] flex items-center justify-center p-8 md:p-12 text-white">
-            <div className="w-full max-w-sm"> {/* Constrain width for readability */}
-              <h2 className="text-3xl font-bold mb-6">Head Office</h2>
-              <div className="mb-4">
-                <p className="font-semibold mb-1">Address</p>
-                <p>Head Office (Block E)</p>
-                <p>ESoft Metro Campus No.03,</p>
-                <p>De Fonseka Place, Colombo 4 Srilanka</p>
-              </div>
-              <div className="mb-4">
-                <p className="font-semibold mb-1">Call Us on</p>
-                <a href="tel:+94117572572" className="text-xl font-bold hover:underline">+94 117 572 572</a>
-              </div>
-              <div>
-                <p className="font-semibold mb-1">Email</p>
-                <a href="mailto:info@esoft.lk" className="text-xl font-bold hover:underline">info@esoft.lk</a>
-              </div>
-            </div>
-          </div>
+          {/* Right Grid  */}
+
+          <div className="w-full md:w-5/12"> {/* Corresponds to Grid item xs={12} sm={7} */}
+             <div className="w-full max-w-sm"> {/* Constrain width for readability */}
+              <h2 className="text-4xl font-semibold -mt-12" data-aos="fade-right">
+              Head <span className="text-[#00AECD]">Office</span>
+              </h2>              <div className="mb-4">
+                            <p className="font-sm mb-1 mt-5"data-aos="fade-right">Address</p>
+                            <p className='font-bold'data-aos="fade-right">Head Office (Block E)</p>
+                            <p className='font-bold'data-aos="fade-right">ESoft Metro Campus No.03,</p>
+                            <p className='font-bold'data-aos="fade-right">De Fonseka Place, Colombo 4 Srilanka</p>
+                          </div>
+                          <div className="mb-4">
+                            <p className="font-sm mb-1"data-aos="fade-right">Call Us on</p>
+                            <a href="tel:+94117572572" className="text-xl font-bold hover:underline" data-aos="fade-right">+94 117 572 572</a>
+                          </div>
+                          <div>
+                            <p className="font-sm mb-1" data-aos="fade-right">Email</p>
+                            <a href="mailto:info@esoft.lk" className="text-xl font-bold hover:underline" data-aos="fade-right">info@esoft.lk</a>
+                          </div>
+                        </div>
+                      </div>
+
+         
+        </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
+            
                 {/* contact card section */}
-                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 '>
+                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 mt-10' data-aos="fade-up">
                   {/* Certificate and Transcript */}
                   <ContactCard
                     title="Certificate and"
@@ -165,7 +134,7 @@ function page() {
                 </div>
 
                 {/* Contact Form Section */}
-                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10'>
+                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10' data-aos="fade-up">
                     <MessageForm />
                 </div>
             </div>
