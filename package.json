@@ -1,0 +1,45 @@
+{
+  "name": "textware-web-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "flowbite-react patch"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.31.0",
+    "aos": "^2.3.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotted-map": "^2.2.3",
+    "flowbite-react": "^0.11.5",
+    "formidable": "^3.5.4",
+    "framer-motion": "^12.6.3",
+    "gsap": "^3.12.7",
+    "lucide-react": "^0.482.0",
+    "motion": "^12.5.0",
+    "next": "15.2.3",
+    "next-themes": "^0.4.6",
+    "nodemailer": "^7.0.3",
+    "react": "^19.0.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.16.0",
+    "smooth-scrollbar": "^8.8.4",
+    "sweetalert2": "^11.22.0",
+    "tailwind-merge": "^3.0.2",
+    "tailwind-scrollbar-hide": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.0.14",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.14"
+  }
+}
