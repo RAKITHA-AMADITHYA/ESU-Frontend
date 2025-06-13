@@ -164,7 +164,7 @@ const MegaMenu = () => {
             <div className="flex items-center">
                 <Image
                     src="/esu/logos/ESULogo.png"
-                    alt="Textware Logo"
+                    alt="Esu Logo"
                     width={97}
                     height={69}
                     className="object-contain cursor-pointer max-md:ml-5"

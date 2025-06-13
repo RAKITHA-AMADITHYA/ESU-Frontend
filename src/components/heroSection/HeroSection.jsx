@@ -21,7 +21,7 @@ const HeroSection = () => {
             >
               <div className="text-left sm:text-left">
                 <h2 className="text-3xl sm:text-5xl  xl:text-5xl font-semibold   mb-2 text-[#F78845]">
-                  TEXTWARE
+                  ESU
               </h2>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-2">
                 CORPORATE MESSAGING
@@ -30,7 +30,7 @@ const HeroSection = () => {
                 SOLUTIONS
               </h3>
               <p className="text-[#757575] text-base max-md:text-base md:text-lg">
-                TextWare Messaging Solutions provides a comprehensive suite of communication services,
+                ESU Messaging Solutions provides a comprehensive suite of communication services,
                 including SMS, WhatsApp, IVR, and shortcode solutions Etc. We help businesses enhance
                 customer engagement, automate interactions, and deliver secure, real-time messaging for
               </p>
