@@ -7,9 +7,10 @@ import Image from 'next/image'
 function page() {
     return (
         <div className="min-h-screen bg-white">
+            {/*Hero Section  */}
             <SubHero/>
             <div className="relative w-full flex flex-col ">
-                
+              {/* Head Office section  */}
               <div>
  
             <div className='w-full h-[80vh] max-md:h-[100vh]   relative flex items-center justify-center'>
@@ -59,17 +60,9 @@ function page() {
             </div>
  
  
-        </div>
+              </div>
 
-
-
-
-
-
-
-
-            
-                {/* contact card section */}
+              {/* contact card section */}
                 <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 ' data-aos="fade-up">
                   {/* Certificate and Transcript */}
                   <ContactCard
