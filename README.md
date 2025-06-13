@@ -15,10 +15,6 @@ This project is built with Next.js and uses React components. Follow these steps
 
     ```bash
     npm install
-    # or
-    yarn install
-    # or
-    pnpm install
     ```
 
 3.  **Set up environment variables:**
@@ -40,10 +36,6 @@ This project is built with Next.js and uses React components. Follow these steps
 
     ```bash
     npm run dev
-    # or
-    yarn dev
-    # or
-    pnpm dev
     ```
 
     This will start the Next.js development server, and you can view the project in your browser at `http://localhost:3000`.
