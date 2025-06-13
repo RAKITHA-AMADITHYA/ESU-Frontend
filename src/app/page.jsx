@@ -70,7 +70,7 @@ function page() {
 
             
                 {/* contact card section */}
-                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 mt-20' data-aos="fade-up">
+                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 ' data-aos="fade-up">
                   {/* Certificate and Transcript */}
                   <ContactCard
                     title="Certificate and"
