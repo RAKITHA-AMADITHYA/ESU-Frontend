@@ -50,6 +50,65 @@ function ContactForm() {
     setIsLoading(true);
 
     try {
+      // Validate all fields
+      if (!formData.firstName) {
+        setStatus("First Name is required");
+        setIsLoading(false);
+        return;
+      }
+      if (!formData.lastName) {
+        setStatus("Last Name is required");
+        setIsLoading(false);
+        return;
+      }
+      if (!formData.email) {
+        setStatus("Email is required");
+        setIsLoading(false);
+        return;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+        setStatus("Invalid email format");
+        setIsLoading(false);
+        return;
+      }
+      if (!formData.contact) {
+        setStatus("Contact Number is required");
+        setIsLoading(false);
+        return;
+      } else if (!/^\d+$/.test(formData.contact)) {
+        setStatus("Contact Number must contain only digits");
+        setIsLoading(false);
+        return;
+      } else if (formData.contact.length !== 10) {
+        setStatus("Contact Number must be 10 digits long");
+        setIsLoading(false);
+        return;
+      }
+      if (!formData.nationality) {
+        setStatus("Nationality is required");
+        setIsLoading(false);
+        return;
+      }
+      if (!formData.nicPassport) {
+        setStatus("NIC/Passport is required");
+        setIsLoading(false);
+        return;
+      }
+      if (!formData.academicProgramme) {
+        setStatus("Academic Programme is required");
+        setIsLoading(false);
+        return;
+      }
+      if (!formData.message) {
+        setStatus("Message is required");
+        setIsLoading(false);
+        return;
+      }
+      if (!formData.file) {
+        setStatus("File is required");
+        setIsLoading(false);
+        return;
+      }
+
       const formDataToSend = new FormData();
       for (const key in formData) {
         formDataToSend.append(key, formData[key]);

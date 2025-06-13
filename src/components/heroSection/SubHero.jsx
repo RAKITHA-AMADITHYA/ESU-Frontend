@@ -14,7 +14,7 @@ function SubHero() {
     <section className="relative w-full h-[calc(100vh-10rem)] px-4 sm:px-10 pt-10">
       {/* Background Image */}
       <Image
-        src="/esu/heros/contact.jpg"
+        src="/esu/heros/contactImg.jpg"
         alt="world map using dots"
         priority
         fill

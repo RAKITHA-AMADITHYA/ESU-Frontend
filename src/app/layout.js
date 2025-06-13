@@ -1,7 +1,8 @@
+'use client';
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import MegaMenu from "@/components/header/MegaMenu";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import Loading from "./loading";
 import Footer from "@/components/footer/Footer";
 import AOSInit from "@/hooks/AosInit";
@@ -18,18 +19,22 @@ const poppins = Poppins({
 
 
 export default function RootLayout({ children }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <html lang="en">
             {/* <Head> block removed */}
             <body className={`${poppins.className} antialiased`}>
             <MegaMenu />
             {/* <ScrollToTop /> */}
-        <Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
             <AOSInit />
             {children}
-        </Suspense>
-        <Footer />
-        </body>
+            </Suspense>
+            <Footer />
+          </body>
         </html>
     );
 }

@@ -5,72 +5,65 @@ import MessageForm from '@/components/messageForm/MessageForm'
 import Image from 'next/image'
 
 function page() {
-     const handleMapClick = () => {
-        window.open(
-            "https://www.google.com/maps/place/TextWare/@6.880146,79.85851,15z/data=!4m6!3m5!1s0x3ae25bd3ecd229b3:0xf4c98e4533f93349!8m2!3d6.8801458!4d79.8585096!16s%2Fg%2F11h4tn78x0?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D"
-        );
-    };
-
     return (
         <div className="min-h-screen bg-white">
+            {/*Hero Section  */}
             <SubHero/>
-            <div className="relative w-full bg-white flex flex-col ">
-                
-            <div className="bg-[#aed6e0] mt-50 h-80">
-                <div className="w-auto  mt-0 md:mt-2 mx-2 md:mx-auto">
-                <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-2">
-
-                 {/* Left Grid */}
-                    <div className="w-full md:w-7/12 flex justify-center md:justify-end items-end md:-mt-[180px]" data-aos="fade-up"> 
-                              <Image
-                      src="/esu/common/studentImg.png"
-                      alt="Students happily walking on campus"
-                      width={900} // adjust size as needed
-                      height={400}
-                      priority
-                      className="object-contain object-center lg:object-left"
-                    />
-
-          </div>
-
-          {/* Right Grid  */}
-
-          <div className="w-full md:w-5/12"> {/* Corresponds to Grid item xs={12} sm={7} */}
-             <div className="w-full max-w-sm"> {/* Constrain width for readability */}
-              <h2 className="text-4xl font-semibold -mt-12" data-aos="fade-right">
-              Head <span className="text-[#00AECD]">Office</span>
-              </h2>              <div className="mb-4">
-                            <p className="font-sm mb-1 mt-5"data-aos="fade-right">Address</p>
-                            <p className='font-bold'data-aos="fade-right">Head Office (Block E)</p>
-                            <p className='font-bold'data-aos="fade-right">ESoft Metro Campus No.03,</p>
-                            <p className='font-bold'data-aos="fade-right">De Fonseka Place, Colombo 4 Srilanka</p>
-                          </div>
-                          <div className="mb-4">
-                            <p className="font-sm mb-1"data-aos="fade-right">Call Us on</p>
-                            <a href="tel:+94117572572" className="text-xl font-bold hover:underline" data-aos="fade-right">+94 117 572 572</a>
-                          </div>
-                          <div>
-                            <p className="font-sm mb-1" data-aos="fade-right">Email</p>
-                            <a href="mailto:info@esoft.lk" className="text-xl font-bold hover:underline" data-aos="fade-right">info@esoft.lk</a>
-                          </div>
+            <div className="relative w-full flex flex-col ">
+              {/* Head Office section  */}
+              <div>
+ 
+            <div className='w-full h-[80vh] max-md:h-[100vh]   relative flex items-center justify-center'>
+ 
+                <div className='flex w-[90%] h-full  max-md:flex-col'>
+                    <div className="relative w-[60%] max-md:w-full h-full z-50" data-aos="fade-up">
+ 
+                        {/* leftt */}
+ 
+                        <Image
+                            src="/esu/common/studentImg.png"
+                            alt="Students happily walking on campus"
+                            fill
+                            className="object-contain "
+                        />
+                        {/* right */}
+ 
+ 
+                    </div>
+                    <div className="w-full md:w-[40%]  flex justify-center items-center z-50"> {/* Corresponds to Grid item xs={12} sm={7} */}
+                        <div className="w-full "> {/* Constrain width for readability */}
+                            <h2 className="text-4xl font-semibold " data-aos="fade-right">
+                                Head <span className="text-[#00AECD]">Office</span>
+                            </h2>
+                            <div className="relative md:top-5">
+                                <p className="font-sm mt-2  " data-aos="fade-right">Address</p>
+                                <p className='font-bold' data-aos="fade-right">Head Office (Block E)</p>
+                                <p className='font-bold' data-aos="fade-right">ESoft Metro Campus No.03,</p>
+                                <p className='font-bold mb-2' data-aos="fade-right">De Fonseka Place, Colombo 4 Srilanka</p>
+ 
+                                <div className="">
+                                    <p className="font-sm " data-aos="fade-right">Call Us on</p>
+                                    <a href="tel:+94117572572" className="text-xl mb-2 font-bold hover:underline" data-aos="fade-right">+94 117 572 572</a>
+                                </div>
+                                <div>
+                                    <p className="font-sm " data-aos="fade-right">Email</p>
+                                    <a href="mailto:info@esoft.lk" className="text-xl font-bold hover:underline" data-aos="fade-right">info@esoft.lk</a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-
-         
-        </div>
-      </div>
+                    </div>
+                </div>
+ 
+                <div className='bg-[#aed6e0] absolute  w-full h-[53%] max-md:mt-0 mt-[90px] max-md:h-full'>
+ 
+                </div>
             </div>
+ 
+ 
+              </div>
 
-
-
-
-
-
-
-
-            
-                {/* contact card section */}
-                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 mt-20' data-aos="fade-up">
+              {/* contact card section */}
+                <div className='container mx-auto py-10 flex items-center justify-center flex-wrap gap-10 px-4 sm:px-10 ' data-aos="fade-up">
                   {/* Certificate and Transcript */}
                   <ContactCard
                     title="Certificate and"
@@ -112,7 +105,6 @@ function page() {
                 {/*  Map Section  */}
                 <div 
                     className='mt-10 w-full h-[400px]  overflow-hidden cursor-pointer' 
-                    onClick={handleMapClick}
                     data-aos="fade-up"
                 >
                     <iframe 
