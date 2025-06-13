@@ -16,7 +16,7 @@ function page() {
             <div className='w-full h-[80vh] max-md:h-[100vh]   relative flex items-center justify-center'>
  
                 <div className='flex w-[90%] h-full  max-md:flex-col'>
-                    <div className="relative w-[60%] max-md:w-full h-full z-50" data-aos="fade-up">
+                    <div className="relative w-[60%] max-md:w-full h-full z-30" data-aos="fade-up">
  
                         {/* leftt */}
  
@@ -32,10 +32,10 @@ function page() {
                     </div>
                     <div className="w-full md:w-[40%]  flex justify-center items-center z-50"> {/* Corresponds to Grid item xs={12} sm={7} */}
                         <div className="w-full "> {/* Constrain width for readability */}
-                            <h2 className="text-4xl font-semibold " data-aos="fade-right">
-                                Head <span className="text-[#00AECD]">Office</span>
+                            <h2 className="text-4xl font-semibold mb-10" data-aos="fade-right">
+                                Head <span className="text-[#00AECD] ">Office</span>
                             </h2>
-                            <div className="relative md:top-5">
+                            <div className="relative md:top-2">
                                 <p className="font-sm mt-2  " data-aos="fade-right">Address</p>
                                 <p className='font-bold' data-aos="fade-right">Head Office (Block E)</p>
                                 <p className='font-bold' data-aos="fade-right">ESoft Metro Campus No.03,</p>
@@ -54,7 +54,7 @@ function page() {
                     </div>
                 </div>
  
-                <div className='bg-[#aed6e0] absolute  w-full h-[53%] max-md:mt-0 mt-[90px] max-md:h-full'>
+                <div className='bg-[#aed6e0] absolute  w-full h-[48%] max-md:mt-0 mt-[90px] max-md:h-full'>
  
                 </div>
             </div>
